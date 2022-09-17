@@ -6,15 +6,13 @@ import joblib
 def load_ml_model():
 
     lgr = joblib.load('model_updates/lgr_mm.sav')
-#     knn = joblib.load('model_updates/knn_sd.sav')
+    knn = joblib.load('model_updates/knn_sd.sav')
     svc = joblib.load('model_updates/svc_sd.sav')
     dt = joblib.load('model_updates/dt.sav')
     rdf = joblib.load('model_updates/rdf.sav')
     ada = joblib.load('model_updates/ada.sav')
     lgbm = joblib.load('model_updates/lgbm.sav')
-
-    return lgr, svc, dt, rdf, ada, lgbm
-
+    return lgr, svc, dt, rdf, ada, lgbm, knn
 # feature engineering process 1
 
 
