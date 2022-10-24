@@ -6,7 +6,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import webbrowser
-
 from PIL import Image
 import plotly.graph_objs as go
 
@@ -15,7 +14,7 @@ ml_training = 'https://colab.research.google.com/drive/1z_-SRUKgo0fQ6d7AVu3uvJde
 pycaret = 'https://colab.research.google.com/drive/1qwfNPrJOyB6NHYmt6gIYSNyQamXiphi5?usp=sharing'
 kaggle = 'https://www.kaggle.com/risenattarach/deep-learning-prediction-val-acc-91-45'
 learn_pycaret = 'https://www.kaggle.com/risenattarach/complete-beginners-guide-to-pycaret'
-print_change_log = False
+print_change_log = True
 
 # get the data
 data = pd.read_csv('diabetes.csv')
