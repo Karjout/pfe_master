@@ -243,23 +243,23 @@ def main():
             logisticReg = ModelPrediction(lgr, "LogisticRegression")
             logisticReg.predict(df_mm)
 
-            KNN = ModelPrediction(knn, "KNN")
-            KNN.predict(df_sd)
-
             supportVecM = ModelPrediction(svc, "SVC")
             supportVecM.predict(df_sd)
 
             DecisionTree = ModelPrediction(dt, "DecisionTree")
             DecisionTree.predict(user_data)
 
-            Adaboost = ModelPrediction(ada, "AdaBoost")
-            Adaboost.predict(user_data)
-
             RandomForest = ModelPrediction(rdf, "RandomForest")
             RandomForest.predict(user_data)
 
+            Adaboost = ModelPrediction(ada, "AdaBoost")
+            Adaboost.predict(user_data)
+
             LGBM = ModelPrediction(lgbm, "LGBM")
             LGBM.predict(user_data)
+
+            KNN = ModelPrediction(knn, "KNN")
+            KNN.predict(df_sd)
 
     elif my_page == 'Technical Report':
 
