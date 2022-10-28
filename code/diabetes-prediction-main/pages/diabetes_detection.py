@@ -267,7 +267,7 @@ def main():
         # Technical Report
         ## Data
         The datasets consist of several medical predictor (independent variables) and one target (dependent) variable. Independent variables include **Pregnancies**, **Glucose**, **BloodPressure**, **SkinThickness**, **Insulin**, **BMI**, **DiabetesPedigreeFunction**, **Age**. Dependent variable includes **Outcome**.
-        [link to the data](https://www.kaggle.com/uciml/pima-indians-diabetes-database)""")
+        [link to the data](https://github.com/Karjout/utilis-/blob/main/dataset/diabetes.csv)""")
 
         image = Image.open('img/diabetes_web.jpg')
         st.image(image, caption='image from adobe stock',
@@ -325,7 +325,7 @@ def main():
 
         if selectbox == 'Deep Learning Model':
             # button to url
-            """[Deep Learning Modeling Part](https://www.kaggle.com/risenattarach/deep-learning-prediction-val-acc-91-45)"""
+            """[Deep Learning Modeling Part](https://github.com/Karjout/utilis-/blob/main/scripts/notebook3e76e90a6b.ipynb)"""
 
             # open image
             st.write("""
@@ -364,9 +364,9 @@ def main():
             st.write(model_logs_ex)
 
         elif selectbox == 'Machine Learning Model':
-            """[Machine Learning Modeling Part](https://colab.research.google.com/drive/1z_-SRUKgo0fQ6d7AVu3uvJdeNvaw2ZsO?usp=sharing)"""
+            """[Machine Learning Modeling Part](https://colab.research.google.com/drive/1-8Lx2wrtFouQIlYXNRNH9YEfW5rLJ9Pt#scrollTo=0_iZAa9ewgTT)"""
             image = Image.open('img/diabetes_end.png')
-            st.image(image, caption='images from adobe stock',
+            st.image(image, caption='Diabete figure',
                      use_column_width=True)
 
     elif my_page == "Modeling with Pycaret":
@@ -386,7 +386,7 @@ def main():
             'pycaret-screenshots/after-feature-engineering-Pycaret.JPG')
         st.image(image, caption='model', use_column_width=True)
 
-        """[Pycaret Modeling](https://colab.research.google.com/drive/1qwfNPrJOyB6NHYmt6gIYSNyQamXiphi5?usp=sharing)"""
+        """[Pycaret Modeling](https://colab.research.google.com/drive/1OrPrUB3dk-d_KQngvzmofg9m3p9wzDG6?usp=sharing)"""
         """[Learn more about Pycaret](https://www.kaggle.com/risenattarach/complete-beginners-guide-to-pycaret)"""
 
 
