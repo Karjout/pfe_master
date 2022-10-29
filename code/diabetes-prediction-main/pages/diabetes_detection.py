@@ -364,7 +364,7 @@ def main():
             st.write(model_logs_ex)
 
         elif selectbox == 'Machine Learning Model':
-            """[Machine Learning Modeling Part](https://colab.research.google.com/drive/1-8Lx2wrtFouQIlYXNRNH9YEfW5rLJ9Pt#scrollTo=0_iZAa9ewgTT)"""
+            """[Machine Learning Modeling Part](https://colab.research.google.com/drive/1I1q02X9WBB5TZCCzlfLKWTGf5F-cJVyQ?usp=sharing)"""
             image = Image.open('img/diabetes_end.png')
             st.image(image, caption='Diabete figure',
                      use_column_width=True)
