@@ -60,15 +60,15 @@ def main():
             st.sidebar.number_input(
                 label="Pregnancies",
                 min_value=0,
-                max_value=40,
-                value=2,
+                max_value=17,
+                value=0,
                 format="%i"
             ))
         user_data.append(
             st.sidebar.number_input(
                 label="Glucose",
                 min_value=0,
-                max_value=400,
+                max_value=220,
                 value=119,
                 format="%i"
             ))
@@ -76,44 +76,44 @@ def main():
             st.sidebar.number_input(
                 label="BloodPressure",
                 min_value=0,
-                max_value=400,
+                max_value=122,
                 value=64,
                 format="%i"))
         user_data.append(
             st.sidebar.number_input(
                 label="SkinThickness",
                 min_value=0,
-                max_value=400,
+                max_value=110,
                 value=18,
                 format="%i"))
         user_data.append(
             st.sidebar.number_input(
                 label="Insulin",
                 min_value=0,
-                max_value=1600,
+                max_value=800,
                 value=92,
                 format="%i"))
         user_data.append(
             st.sidebar.number_input(
                 label="BMI",
                 min_value=0.0,
-                max_value=100.0,
+                max_value=80.6,
                 value=39.4,
                 format="%f",
                 step=1.0))
         user_data.append(
             st.sidebar.number_input(
                 label="DiabetesPedigreeFunction",
-                min_value=0.0,
-                max_value=400.0,
+                min_value=0.078,
+                max_value=2.42,
                 value=0.775,
                 format="%f",
                 step=1.0))
         user_data.append(
             st.sidebar.number_input(
                 label="Age",
-                min_value=0,
-                max_value=150,
+                min_value=21,
+                max_value=90,
                 value=23,
                 format="%i"))
 
@@ -131,7 +131,7 @@ def main():
         button = st.button("Predict")
 
         image = Image.open('img/diabetes2.jpg')
-        st.image(image, caption='images from adobe stock',
+        st.image(image, caption='Diabetes Prediction',
                  use_column_width=True)
 
         # model prediction result for ML model
